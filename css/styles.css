@@ -1,0 +1,234 @@
+/* 
+  colors
+  fonts
+
+*/
+
+/* color variables */
+
+:root {
+
+--sunyellow: hsl(48,100%,50%);
+--black: black;
+
+
+}
+
+/* html elements */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  font-size: larger;
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h3 {
+  line-height: 4rem;
+}
+h4 {
+  line-height: 3rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--sunyellow);
+  color: var(--black);
+  min-height: 200px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url("/img/honungskaka.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 50px 0;
+  height: auto;
+}
+
+
+
+.footer {
+    background-color: var(--sunyellow);
+    color: var(--black);
+    padding: 20px 8%;
+    text-align: center;
+    /* height: fit-content; */
+  }
+
+
+/* classes */
+
+.pics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: darkolivegreen;
+  padding: 50px;
+}
+
+.round-image {
+  border-radius: 50%;
+  margin: 0 50px;
+}
+
+/* ids */
+
+/* MQ Tablet */
+
+@media screen and (max-width: 768px) {
+
+  
+    h1 {
+      font-size: 3.25rem;
+      font-weight: 600;
+      
+      
+    }
+    
+    h2 {
+      font-size: 2rem;
+      font-weight:bold;
+    }
+    
+    h3 {
+      line-height: 2rem;
+    }
+    h4 {
+      line-height: 1.5rem;
+    }
+    
+    .header {
+      min-height: 160px;
+    }
+    
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image:url("/img/honungskaka.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 50px 0;
+      height: auto;
+    }
+    
+    
+    .pics {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: darkolivegreen;
+      padding: 20px 0;
+    }
+    
+    .round-image {
+      border-radius: 50%;
+      margin: 20px 7px;
+    }
+
+    
+    
+    img {
+      height: 160px;
+    }  
+
+}
+
+
+
+/* MQ smartphone */
+
+@media screen and (max-width: 414px) {
+
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    
+  }
+
+  h2 {
+    font-size: 1.9rem;
+    font-weight:bold;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    line-height: 3rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+
+  .header {
+    min-height: 125px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("/img/honungskaka.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 10px;
+    height: auto;
+  }
+  
+
+  .pics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: darkolivegreen;
+    padding: 20px;
+  }
+
+  .round-image {
+    border-radius: 50%;
+    margin: 20px 7px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+}
