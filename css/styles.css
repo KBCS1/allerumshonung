@@ -27,19 +27,19 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
-  font-size: larger;
+  /* font-size: larger; */
   text-decoration: none;
   color: var(--black);
 }
 
 a:hover {
-  text-decoration: underline;
-  font-style: italic;
+  font-weight: bolder;
 }
 
 h1 {
@@ -57,6 +57,10 @@ h3 {
 }
 h4 {
   line-height: 3rem;
+}
+
+.footer a  {
+  color: var(--sunyellow);
 }
 
 .header {
@@ -80,14 +84,26 @@ h4 {
   height: auto;
 }
 
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-color: var(--sunyellow);
+}
+
 
 
 .footer {
-    background-color: var(--sunyellow);
-    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    color: var(--sunyellow);
     padding: 20px 8%;
     text-align: center;
     /* height: fit-content; */
+    line-height: 2rem;
   }
 
 
