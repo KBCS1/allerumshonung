@@ -256,7 +256,7 @@ a:hover.link {
 
   .header {
     min-height: 125px;
-    background-image:url("/img/honungskaka.jpg");
+    background-image:url("../img/honungskaka.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
