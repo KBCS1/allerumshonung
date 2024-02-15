@@ -31,12 +31,17 @@ h6,
 p,
 a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: center;
+
 }
 
 a {
   /* font-size: larger; */
   text-decoration: none;
   color: var(--black);
+  text-align: center;
+  font-weight: normal !important;
 }
 
 a:hover {
@@ -44,24 +49,32 @@ a:hover {
 }
 
 h1 {
-  font-weight: 300;
-  font-size: 3.5rem;
+ 
+  font-size: 5vw;
 }
 
 h2 {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 4vw;
+ 
 }
 
 h3 {
-  line-height: 4rem;
+  font-size: 3vw;
+  line-height: 6rem;
+     
 }
+
 h4 {
-  line-height: 3rem;
+  font-size: 2.6vw;
+  line-height: 3.5rem;
 }
 
 .footer a  {
   color: var(--sunyellow);
+}
+
+br.smartphone {
+  display: none;
 }
 
 .header {
@@ -69,7 +82,7 @@ h4 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image:url("../img/honungskaka.jpg");
+  background-image:url("/img/honungskaka.jpg");
   background-repeat: no-repeat;
   background-size:cover;
   color: var(--black);
@@ -78,20 +91,21 @@ h4 {
 
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--sunyellow);
-
-
   padding: 50px 0;
   height: auto;
 }
 
 .links_section {
+  display: flex;
+  flex-direction: column;
   background-color: var(--sunyellow);
-  text-align: center;
-  padding: 25px 0;
+  align-items: center;
 }
+
 .links {
   display: flex;
   flex-direction: row;
@@ -99,7 +113,7 @@ h4 {
   justify-content: center;
   align-items: center;
   background-color: var(--sunyellow);
-  margin: 10px;
+  padding: 15px 0;
   
 }
 
@@ -160,35 +174,44 @@ a:hover.link {
 
   
     h1 {
-      font-size: 3.25rem;
-      font-weight: 600;     
+      font-size: 7vw;
+     
     }
     
     h2 {
-      font-size: 2rem;
-      font-weight:bold;
+      font-size: 5vw;
+        
     }
     
     h3 {
-      line-height: 2rem;
+      font-size: 4vw;
+      line-height: 3rem;
     }
     h4 {
-      line-height: 1.5rem;
+      font-size: 3.5vw;
+      line-height: 2.5rem;
+    }
+
+    a {
+      font-size: 4vw;
+      line-height: 3rem;
+      
+    }
+
+    .footer a {
+      font-size: 3vw;
     }
     
     .header {
       min-height: 160px;
-      background-image:url("../img/honungskaka.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
     }
     
     .main {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 50px 0;
-      height: auto;
+      padding: 25px 0;
+      
     }
     
     
@@ -212,14 +235,25 @@ a:hover.link {
       height: 160px;
     }
 
-    .link {
-      padding: 10px 20px;
+    a.link {
+      padding: 20px 20px;
       margin: 10px 25px;
-      min-width: 100px;
+      width: 100%;
+
       
      
     }
 
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .links_section {
+    padding-top: 25px;
+  }
 
 }
 
@@ -230,35 +264,39 @@ a:hover.link {
 @media screen and (max-width: 480px) {
 
   h1 {
-    font-size: 2.1rem;
-    font-weight: 600;
+    font-size: 8vw;
+    
     
   }
 
   h2 {
-    font-size: 1.9rem;
-    font-weight:bold;
+    font-size: 6.5vw;
+    
   }
 
   h3 {
-    font-size: 1.1rem;
+    font-size: 4.8vw;
     line-height: 3rem;
   }
   h4 {
-    font-size: 0.9rem;
-    line-height: 2rem;
+    font-size: 3.5vw;
+    line-height: 1.6rem;
   }
 
   img {
-    height: 100px;
+    height: 120px;
   }
 
+  br.smartphone {
+    display: inline;
+  }
+
+  a {
+    line-height: 2rem;
+  }
 
   .header {
     min-height: 125px;
-    background-image:url("../img/honungskaka.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .main {
@@ -289,18 +327,19 @@ a:hover.link {
   .links {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     background-color: var(--sunyellow);
-    margin: 10px;
+    
     
   }
   
-  .link {
-    padding: 10px 20px;
+  a.link {
+    padding: 15px 20px;
     margin: 10px 25px;
-    width: 80%;
+    width: 100%;
+    
     
   }
 
