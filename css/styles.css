@@ -82,7 +82,7 @@ br.smartphone {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image:url("//img/honungskaka.jpg");
+  background-image:url("/img/honungskaka.jpg");
   background-repeat: no-repeat;
   background-size:cover;
   color: var(--black);
