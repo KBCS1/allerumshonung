@@ -351,6 +351,11 @@ footer {
     flex-wrap: nowrap;  
  
   }
+
+  a.link {
+    padding: 3px 20px;
+    margin: 5px 0;
+  }
   
 
 }
