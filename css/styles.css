@@ -22,6 +22,8 @@
   padding: 0;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -45,31 +47,38 @@ a {
 }
 
 a:hover {
-  font-weight: bolder;
+  font-size: larger;
+  
 }
 
 h1 {
  
-  font-size: 5vw;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 4vw;
+  font-size: 3rem
  
 }
 
 h3 {
-  font-size: 3vw;
+  font-size: 2.3rem;
   line-height: 6rem;
      
 }
 
 h4 {
-  font-size: 2.6vw;
+  font-size: 2rem;
   line-height: 3.5rem;
 }
 
-.footer a  {
+body {
+  width: 768px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer a  {
   color: var(--sunyellow);
 }
 
@@ -77,7 +86,7 @@ br.smartphone {
   display: none;
 }
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +98,7 @@ br.smartphone {
   min-height: 200px;
 }
 
-.main {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,6 +113,7 @@ br.smartphone {
   flex-direction: column;
   background-color: var(--sunyellow);
   align-items: center;
+  padding-top: 25px;
 }
 
 .links {
@@ -122,21 +132,23 @@ br.smartphone {
   margin: 10px 25px;
   min-width: 100px;
   border-radius: 10px;
-  background-color: var(--black);
-  color: var(--sunyellow);
+  /* background-color: var(--black); */
+  color: var(--black);
+  font-size: larger;
 }
 
 a:hover.link {
-  padding: 10px 20px;
-  background-color: var(--sunyellow);
-  border: 6px solid var(--black);
-  color: var(--black);
-
+  /* padding: 10px 20px; */
+  background-color: var(--black);
+  /* border: 6px solid var(--sunyellow); */
+  color: var(--sunyellow);
+  font-size: larger;
+  
+  
 }
 
 
-
-.footer {
+footer {
     display: flex;
     flex-direction: column;
     background-color: var(--black);
@@ -154,14 +166,18 @@ a:hover.link {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: var(--olive);
-  padding: 50px;
+  padding: 20px 0px;
+
 }
 
 .round-image {
   border-radius: 50%;
   margin: 0 50px;
+  /* padding: 5px 0; */
+  max-width: 100px;
+  height: auto;
 }
 
 
@@ -174,7 +190,7 @@ a:hover.link {
 
   
     h1 {
-      font-size: 7vw;
+      font-size: 3rem;
      
     }
     
@@ -198,18 +214,20 @@ a:hover.link {
       
     }
 
-    .footer a {
+    footer a {
       font-size: 3vw;
     }
     
-    .header {
+    header {
       min-height: 160px;
     }
     
-    .main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    body {
+      width: auto;
+    }
+
+
+    main {
       padding: 25px 0;
       
     }
@@ -219,13 +237,12 @@ a:hover.link {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
       background-color: var(--olive);
-      padding: 20px 0;
+      padding: 10px 5px;
     }
     
     .round-image {
-      border-radius: 50%;
       margin: 20px 7px;
     }
 
@@ -236,10 +253,11 @@ a:hover.link {
     }
 
     a.link {
-      padding: 20px 20px;
+      padding: 5px 5px;
       margin: 10px 25px;
       width: 100%;
-
+      background-color: var(--black);
+      color: var(--sunyellow);
       
      
     }
@@ -249,6 +267,8 @@ a:hover.link {
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
+    
+    
   }
 
   .links_section {
@@ -287,7 +307,7 @@ a:hover.link {
     height: 120px;
   }
 
-  br.smartphone {
+  br.break {
     display: inline;
   }
 
@@ -295,44 +315,41 @@ a:hover.link {
     line-height: 2rem;
   }
 
-  .header {
-    min-height: 125px;
+  body {
+    width: auto;
+    
   }
 
-  .main {
+
+  header {
+    min-height: 125px;
+    
+  }
+
+  main {
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 30px 5%;
     height: auto;
+    
   }
   
 
   .pics {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--olive);
-    padding: 20px;
+    padding: 0 50px;
   }
 
   .round-image {
-    border-radius: 50%;
     margin: 20px 7px;
+    width: 80px;
   }
 
 
   .links {
-    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--sunyellow);
-    
-    
+    flex-wrap: nowrap;  
+ 
   }
   
   a.link {
