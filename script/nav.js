@@ -9,7 +9,7 @@ class Nav extends HTMLElement {
 
      this.innerHTML = `
     <div id="nav">
-      <p>Tillbaka</p>
+      <a href="/index.html">Tillbaka</a>
      </div>
     `
   };
